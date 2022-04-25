@@ -1,0 +1,278 @@
+/* Navbar Vertical Line */
+.navbar .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #808080;
+}
+.flex-container {
+  display: flex;
+  margin-top: 30pt;
+
+  /* border: 2px solid yellow; */
+}
+.hello {
+  font-family: Work Sans, sans-serif;
+  font-size: 72pt;
+  display: flex;
+  color: #000000;
+  /* border: 2px solid yellow; */
+}
+/* Navbar Vertical Line End*/
+
+/* Body */
+.abam {
+  margin-top: auto;
+  font-family: Work Sans, sans-serif;
+  margin-left: 5pt;
+  display: flex;
+  font-size: 1.75 rem;
+  /* border: 2px solid yellow; */
+  color: #000000;
+}
+.lead {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  /* border: 2px solid yellow; */
+  margin-left: 5pt;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+  /* border: 2px solid yellow; */
+  object-fit: contain;
+  min-width: 400px;
+}
+.jumbotron {
+  padding: 0 1rem;
+  background-color: #f3f3f3;
+  /* border: 2px solid yellow; */
+}
+
+.flex-child {
+  margin-right: 30pt;
+  /* border: 2px solid yellow; */
+}
+
+.flex-child:first-child {
+  margin-left: 150px;
+  /* border: 2px solid yellow; */
+  justify-content: end;
+}
+.resume {
+  border: none;
+  width: 140px;
+  height: 140px;
+  margin-left: 5pt;
+  margin-bottom: 5pt;
+  background-color: #eea302;
+  color: #000000;
+  font-size: 15pt;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 1px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.project {
+  border: none;
+  width: 140px;
+  height: 140px;
+  margin-left: 5pt;
+  margin-bottom: 5pt;
+  background-color: #ff3b25;
+  color: #000000;
+  font-size: 15pt;
+  letter-spacing: 1px;
+  font-family: "Work Sans", sans-serif;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.contact {
+  border: none;
+  width: 140px;
+  height: 140px;
+  margin-left: 5pt;
+  margin-bottom: 5pt;
+  background-color: #80d8da;
+  color: #000000;
+  font-size: 15pt;
+  letter-spacing: 1px;
+  font-family: "Work Sans", sans-serif;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.resume:hover {
+  color: black !important;
+  background-color: #f3f3f3 !important;
+  background: #f3f3f3 !important;
+  border: 2px solid black !important;
+  transition: ease-out 0.3s;
+}
+.project:hover {
+  color: black !important;
+  background-color: #f3f3f3 !important;
+  background: #f3f3f3 !important;
+  border: 2px solid black !important;
+  transition: ease-out 0.3s;
+}
+.contact:hover {
+  color: black !important;
+  background-color: #f3f3f3 !important;
+  background: #f3f3f3 !important;
+  border: 2px solid black !important;
+  transition: ease-out 0.3s;
+}
+.contact:hover {
+  color: black !important;
+  background-color: #f3f3f3 !important;
+  background: #f3f3f3 !important;
+  border: 2px solid black !important;
+  transition: ease-out 0.3s;
+}
+/* Akhir Body */
+
+.footer {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  font-family: "Work Sans", sans-serif;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 1em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 1px solid #000000;
+  }
+  .navbar-nav {
+    margin-right: 5px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .container {
+    margin-top: 50pt;
+  }
+}
+
+/* Animation Navbar Button */
+/* Remove border from toggler */
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+/* Lines of the Toggler */
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+
+  display: block;
+  transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar {
+  margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #000000;
+}
+/* Animation Navbar Button end */
+@media only screen and (max-width: 991px) {
+  #navbarText {
+    height: 100vh !important;
+    display: flexbox;
+    text-align: center;
+  }
+  .hello {
+    font-family: "Work Sans", sans-serif;
+  }
+  .navbar-nav {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17pt;
+  }
+  nav ul {
+    height: 100vh;
+    background-color: #f3f3f3;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    transition: all 1s;
+    transform: translateY(100%);
+  }
+  #navToggler {
+    z-index: 1;
+  }
+  body {
+    overflow: hidden;
+  }
+  .nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1vw;
+  }
+  nav ul.slide {
+    transform: translateY(0);
+  }
+  .responsive {
+    display: flex;
+    justify-content: center;
+    width: 10px;
+  }
+}
